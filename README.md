@@ -12,12 +12,17 @@ Explanation:
 Algorithm I have used:
 step 1: construct binary search tree.
       a) With every insertion maintain if moving to left I increment leftCount. It means in left Subtree number of element is going to increase by one.
+      
       b) if moving to right no need to increment of leftCount because not participating in number of elements in leftsubtree.
+      
 step 2: search the required data
       a) while searching if moving to right, It means number of greater than all left subtree element and current node also. So increment smaller count by 
       leftCount + 1;
+      
       b) if moving to left need not to increment smaller counter 
+      
       c) return smaller count;
+      
 Time complexity::
 Let's say, n is number of disticnt value that is used to build tree
 BuildTree complexity: n*logn
